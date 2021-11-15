@@ -1,0 +1,55 @@
+.main {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+
+  font-family: "Gill Sans", "Gill Sans MT";
+  justify-content: center;
+  padding: 30px;
+}
+
+#entryForm {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.text {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.textEnter {
+  width: 240px;
+  height: 100px;
+  border-radius: 15px;
+  font-size: 24px;
+  background-color: rgba(253, 99, 71, 0.877);
+}
+.button {
+  font-size: 20px;
+  width: 80px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+#entryToSection {
+  width: 250px;
+  height: 100px;
+  border-radius: 15px;
+  border: unset;
+  background-color: turquoise;
+  margin-top: 10px;
+}
+
+.entryToDiv {
+  margin-bottom: 15px;
+}
+.display-button {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.Single-entry {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
