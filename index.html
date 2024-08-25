@@ -4,24 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diary</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>My Personal Diary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h1.text {
+            font-size: 2rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .textEnter {
+            width: 100%;
+            height: 150px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: none;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        .textEnter:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .button {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        #entryToSection {
+            margin-top: 30px;
+        }
+        .entryToDiv {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        .entryToDiv p {
+            font-size: 1rem;
+            color: #333;
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .main {
+                padding: 20px;
+                margin: 20px;
+            }
+            .textEnter {
+                height: 120px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="main">
-    <section class="Start">
+        <section class="Start">
             <h1 class="text">My Personal Diary</h1>
             <form id="entryForm">
-            <textarea class="textEnter" placeholder="Start Typing Here..." required></textarea>
-            <button class="button" type="submit">Submit</button>
-        </form>
-    </section>
-    <section id="entryToSection">
-        <div class="entryToDiv">
-
-        </div>
-    </section>
-</div>
+                <textarea class="textEnter" placeholder="Start Typing Here..." required></textarea>
+                <button class="button" type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="entryToSection">
+            <div class="entryToDiv">
+            </div>
+        </section>
+    </div>
     <script src="./index.js"></script>
 </body>
 </html>
